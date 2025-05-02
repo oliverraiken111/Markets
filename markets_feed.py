@@ -243,7 +243,7 @@ if articles_found == 0:
         articles_found += 1
 
 # Write output
-output_filename = "ap_financial_markets.xml"
+output_filename = "markets.xml"
 with open(output_filename, "wb") as f:
     ET.ElementTree(rss).write(f, encoding="utf-8", xml_declaration=True)
 print(f"✅ RSS feed created with {articles_found} AP News financial markets articles in {output_filename}")
